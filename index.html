@@ -81,7 +81,7 @@
         border: 0;
       }
 
-      .logo > img {
+      .logo img {
         max-width: 64px;
         max-height: 64px;
         border-radius: 4px;
@@ -154,6 +154,22 @@
           <div class="col col-xs-4 col-sm-3 col-md-2 thumbnail logo"><img src="img/skills/mysql.png" title="MySQL" alt="MySQL"></div>
         </div>
       </section>
+      <section id="crypto">
+        <h1>Crypto</h1>
+        <p>Help support me with a donation!</p>
+        <div class="row">
+          <div class="col col-xs-4 col-sm-3 col-md-2 thumbnail logo">
+            <a data-toggle="modal" data-target=".monacoin">
+              <img src="img/crypto/monacoin.png" title="Monacoin" alt="Monacoin">
+            </a>
+          </div>
+          <div class="col col-xs-4 col-sm-3 col-md-2 thumbnail logo">
+            <a data-toggle="modal" data-target=".koto">
+              <img src="img/crypto/koto.png" title="Koto" alt="Koto">
+            </a>
+          </div>
+        </div>
+      </section>
       <p class="copyright">&copy;Renjaku</p>
     </div>
     <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -168,6 +184,40 @@
               <div class="modal-body" style="text-align: center">
                 <a class="store" href="https://play.google.com/store/apps/details?id=jp.renjaku.rhythm"><img alt="Google Play で手に入れよう" src="img/stores/googleplay.png"></a>
                 <a class="store" href="https://itunes.apple.com/jp/app/id1225018600"><img alt="App Store からダウンロード" src="img/stores/appstore.svg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade monacoin" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-dialog modal-sm modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Monacoin Address</h4>
+              </div>
+              <div class="modal-body" >
+                <input type="text" class="form-control input-sm" value="MKk6pgxCczumErWFVSdVY1sss7pigf9VZA" readonly="" onclick="select()">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade koto" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-dialog modal-sm modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Koto Address</h4>
+              </div>
+              <div class="modal-body" >
+                <input type="text" class="form-control input-sm" value="k14m9QvrkQ2W7PfEhMDEmbzWdi6J3cgvSJT" readonly="" onclick="select()">
               </div>
             </div>
           </div>
