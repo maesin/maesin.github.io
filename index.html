@@ -111,6 +111,14 @@
           /* To center horizontally */
           margin: 0 auto;
       }
+
+      .modal-body {
+        text-align: center;
+      }
+
+      .modal-body img {
+        margin-bottom: 8px;
+      }
     </style>
   </head>
   <body>
@@ -159,6 +167,16 @@
         <p>Help support me with a donation!</p>
         <div class="row">
           <div class="col col-xs-4 col-sm-3 col-md-2 thumbnail logo">
+            <a data-toggle="modal" data-target=".bitcoin">
+              <img src="img/crypto/bitcoin.png" title="Bitcoin" alt="Bitcoin">
+            </a>
+          </div>
+          <div class="col col-xs-4 col-sm-3 col-md-2 thumbnail logo">
+            <a data-toggle="modal" data-target=".ethereum">
+              <img src="img/crypto/ethereum.png" title="Ethereum" alt="Ethereum">
+            </a>
+          </div>
+          <div class="col col-xs-4 col-sm-3 col-md-2 thumbnail logo">
             <a data-toggle="modal" data-target=".monacoin">
               <img src="img/crypto/monacoin.png" title="Monacoin" alt="Monacoin">
             </a>
@@ -181,9 +199,45 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Rhythm</h4>
               </div>
-              <div class="modal-body" style="text-align: center">
+              <div class="modal-body">
                 <a class="store" href="https://play.google.com/store/apps/details?id=jp.renjaku.rhythm"><img alt="Google Play で手に入れよう" src="img/stores/googleplay.png"></a>
                 <a class="store" href="https://itunes.apple.com/jp/app/id1225018600"><img alt="App Store からダウンロード" src="img/stores/appstore.svg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bitcoin" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-dialog modal-sm modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Bitcoin Address</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/crypto/bitcoin-qr.png">
+                <input type="text" class="form-control input-sm" value="37qeH9esuQZyVUCMjaWUujcSwFrNQugb1R" readonly="" onclick="select()">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade ethereum" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-dialog modal-sm modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Ethereum Address</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/crypto/ethereum-qr.png">
+                <input type="text" class="form-control input-sm" value="0x22125A0065E7CdDfD7763A1aC777632C0B13457d" readonly="" onclick="select()">
               </div>
             </div>
           </div>
@@ -199,7 +253,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Monacoin Address</h4>
               </div>
-              <div class="modal-body" >
+              <div class="modal-body">
+                <img src="img/crypto/monacoin-qr.png">
                 <input type="text" class="form-control input-sm" value="MKk6pgxCczumErWFVSdVY1sss7pigf9VZA" readonly="" onclick="select()">
               </div>
             </div>
@@ -216,7 +271,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Koto Address</h4>
               </div>
-              <div class="modal-body" >
+              <div class="modal-body">
+                <img src="img/crypto/koto-qr.png">
                 <input type="text" class="form-control input-sm" value="k14m9QvrkQ2W7PfEhMDEmbzWdi6J3cgvSJT" readonly="" onclick="select()">
               </div>
             </div>
